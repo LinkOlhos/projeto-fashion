@@ -6,16 +6,35 @@
 
  & #novidades {
 
-    & .textos {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: left;
+    & .texto { 
+        margin-top: 100px;
+        margin-left: 190px;
 
-    & h2 {     
-            font-size: 30px;
-            font-weight: 300px;
+        & span {
+        font-weight: 900;
+        font-size: 48px;
+        color: #000;
         }
+
+        .detalhe {
+        position: relative;
+        display: inline;
+        z-index: 1;
+        }
+
+        .detalhe::before {
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        left: -5%;
+        width: 60%;
+        margin-left: 150px;
+        height: 40%;
+        background-color: #f3e06e; 
+        border-radius: 50% 0% 50% 0% / 100% 0% 100% 0%;
+        z-index: -1; 
+        transform: rotate(-1deg); 
+        }  
     }
 
    & .grade{
@@ -23,7 +42,7 @@
         grid-template-columns: repeat(3, 1fr);
         padding: 0 140px;
         margin-top: 60px;
-        gap: 0px;   
+        gap: 40px;   
         text-align: left;
 
      & div {
@@ -33,6 +52,27 @@
             color: #000000;
             border-radius: 48px;
             padding: 15px 25px;
+        }
+
+        & p {
+            margin-top: 15px;
+            font-size: 32px;
+            color:#191919;
+            font-weight: 500;
+        }
+
+        & a {
+            font-size: 20px;
+            color: #7F7F7F;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+        }   
+         
+        & a box-icon {
+            width: 30px;  
+            height: 30px;
+            fill: #666;   
         }
     }
 }
