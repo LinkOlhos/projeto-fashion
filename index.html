@@ -6,74 +6,82 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion</title>
+    <title>Fashion - Let's Explore Unique Clothes</title>
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="index.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
 </head>
 
-<body>
+<body class="bg-white text-black min-h-screen flex flex-col justify-between">
 
-    <main>
+    <header class="flex justify-between items-center px-6 md:px-14 lg:px-20 py-8 max-w-[1440px] mx-auto w-full">
+        <a href="#" class="flex items-center gap-3 font-black text-2xl tracking-wider text-black">
+            <img src="./assets/logo.png" alt="Logo Fashion" class="h-7 w-auto">
+            <span>FASHION</span>
+        </a>
 
-    <section id="download">
+        <nav class="hidden md:flex items-center gap-8 lg:gap-14 font-medium text-sm lg:text-base tracking-wider text-neutral-800">
+            <a href="#" class="hover:text-black transition">CATALOGUE</a>
+            <a href="#" class="hover:text-black transition">FASHION</a>
+            <a href="#" class="hover:text-black transition">FAVOURITE</a>
+            <a href="#" class="hover:text-black transition">LIFESTYLE</a>
+            <a href="#" class="bg-black text-white px-6 py-3 rounded-[7px] font-semibold tracking-wider hover:bg-neutral-800 transition">SIGN UP</a>
+        </nav>
+    </header>
 
-        <div class="flex justify-between p-40">
-        <div class="items-center size-120">
-        <h1 class="font-bold text-5xl pb-16 pt-60">DOWNLOAD APP &
-GET THE VOUCHER!</h1>
-        <p class="font-medium text-2xl text-gray-600 pb-16">Get 30% off for first transaction using
-Rondovision mobile app for now.</p>
-        <img src="/images/img-stores-download.png" alt="">
-        </div>
-        <div>
-            <img class="p-10" src="images\img-celular-download.png" alt="">
-        </div>
-        </div>
+    <main class="px-6 md:px-14 lg:px-20 py-2 max-w-[1440px] mx-auto w-full flex-1">
+        <section class="bg-[#F4F6F5] rounded-[59px] px-8 md:px-16 lg:px-20 pt-10 md:pt-16 flex flex-col lg:flex-row items-center justify-between relative overflow-hidden">
+            
+            <div class="flex-1 z-10 pb-10 lg:pb-16 text-center lg:text-left">
+                <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-[76px] xl:text-[84px] font-black leading-[1.08] tracking-tight text-black">
+                    <span class="bg-white px-6 py-1.5 inline-block -rotate-2 shadow-xs">LET’S</span><br>
+                    EXPLORE<br>
+                    <span class="bg-[#EBD96B] px-6 py-1.5 inline-block -rotate-2 my-1">UNIQUE</span><br>
+                    CLOTHES.
+                </h1>
 
-    </section>
-    
+                <p class="mt-7 text-[#191818] text-lg sm:text-xl lg:text-2xl font-normal max-w-md mx-auto lg:mx-0 leading-relaxed">
+                    Live for Influential and Innovative fashion!
+                </p>
+
+                <div class="mt-8 flex items-center justify-center lg:justify-start gap-6">
+                    <svg class="w-32 sm:w-40 h-auto" viewBox="0 0 190 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 30.6152C48 -11.7848 146.667 -1.05149 190 9.61518C176.4 33.6152 57.6667 33.6152 0 30.6152Z" fill="#EBD96B"/>
+                    </svg>
+                    <a href="#" class="bg-black text-white px-9 py-4 rounded-[10px] font-semibold text-base sm:text-lg hover:bg-neutral-800 transition shadow-sm">
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex-1 flex justify-center lg:justify-end items-end relative min-h-[380px] lg:min-h-[540px] w-full">
+                <i class='bx bxs-star text-[#E0E0E0] text-3xl absolute top-[8%] left-[2%] pointer-events-none'></i>
+                <i class='bx bxs-star text-[#E0E0E0] text-2xl absolute top-[14%] right-[8%] pointer-events-none'></i>
+                <i class='bx bxs-star text-[#E0E0E0] text-2xl absolute bottom-[10%] left-[8%] pointer-events-none'></i>
+                <i class='bx bxs-star text-[#E0E0E0] text-4xl absolute bottom-[16%] right-[5%] pointer-events-none'></i>
+
+                <img 
+                    src="./assets/incendiary-fantastically-beautiful-girl-coat-eco-fur-moves-fun-picture-lovely-lady-pink-clothes-removebg-preview 1.png" 
+                    alt="Modelo com casaco rosa" 
+                    class="max-h-[460px] lg:max-h-[540px] xl:max-h-[580px] w-auto object-contain z-10 block"
+                >
+            </div>
+        </section>
     </main>
 
-    <footer class="bg-black">
-        <div class="flex justify-between p-25">
-        <div>
-            <h1 class="text-white">FASHION</h1>
-            <p class="text-white">Complete your style with awesome clothes from us.</p>
-            <div class="flex">
-                <a href=""><box-icon type='logo' color='#ffffff' name='facebook'></box-icon></a>
-                <a href=""><box-icon type='logo' color='#ffffff' name='instagram'></box-icon></a>
-                <a href=""><box-icon type='logo' color='#ffffff' name='twitter'></box-icon></a>
-                <a href=""><box-icon type='logo' color='#ffffff' name='linkedin'></box-icon></a>
-            </div>
+    <section class="bg-[#EBD96B] w-full py-10 md:py-12 mt-8">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-14 flex flex-wrap items-center justify-around gap-8">
+            <img src="./assets/hm.png" alt="H&M" class="h-8 md:h-10 w-auto object-contain">
+            <img src="./assets/obey.png" alt="OBEY" class="h-7 md:h-9 w-auto object-contain">
+            <img src="./assets/shopify.png" alt="Shopify" class="h-8 md:h-10 w-auto object-contain">
+            <img src="./assets/lacoste.png" alt="Lacoste" class="h-8 md:h-10 w-auto object-contain">
+            <img src="./assets/levis.png" alt="Levi's" class="h-8 md:h-10 w-auto object-contain">
+            <img src="./assets/amazon.png" alt="Amazon" class="h-8 md:h-10 w-auto object-contain">
         </div>
-        <div class="flex text-white justify-between gap-70 px-30">
-            <ul class="">
-                <li>Company</li>
-                <li>About</li>
-                <li>Contact us</li>
-                <li>Support</li>
-                <li>Carrers</li>
-            </ul>
-            <ul>
-                <li>Quick Link</li>
-                <li>Share Location</li>
-                <li>Orders Tracking</li>
-                <li>Size Guide</li>
-                <li>FAQs</li>
-            </ul>
-            <ul>
-                <li>Legal</li>
-                <li>Terms & conditions</li>
-                <li>Privacy Policy</li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        </div>
-
-    </footer>
+    </section>
 
 </body>
 
